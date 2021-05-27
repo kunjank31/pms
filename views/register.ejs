@@ -1,0 +1,31 @@
+<%# header links part %> 
+<% include head_links %>
+
+<div class="container register mt-5 w-50">
+  <h2 class="text-center"><%= title %> </h2>
+  <form action="/register" method="POST">
+    <% if (ShowMsg != '') { %>
+     <p class="text-info"><%= ShowMsg %> </p>
+    <% } %>
+    <div class="mb-3">
+      <label for="username" class="form-label">User Name</label>
+      <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="password">
+    </div>
+    <div class="mb-3">
+      <label for="cpassword" class="form-label">Confirm Password</label>
+      <input type="password" name="cpassword" class="form-control" id="cpassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p class="text-center fw-bold mt-2">if Have account <a href="/" class="text-success text-decoration-none">Click Now</a></p>
+  </form>
+</div>
+<%# Footer part %> 
+<% include footer %>

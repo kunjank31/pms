@@ -1,0 +1,27 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.login,.register{
+  margin-top: 10rem;
+  border: 1px solid #86b7fe;
+  border-radius: .25rem;
+  padding:1rem 3rem 2rem;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%)
+}
+.category{
+  border: 1px solid rgba(0, 255, 255, 0.479);
+  border-radius: .25rem;
+  padding: 0;
+  /* box-shadow: 0 0 0 0.25rem #0dcaf03f */
+}
+.category h3{
+  background-color: rgba(36, 180, 180, 0.205);
+}
+.form_add{
+  padding: 1rem;
+}

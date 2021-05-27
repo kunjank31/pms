@@ -1,0 +1,54 @@
+<body>
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">Password Management System</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/passwordCategory">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Password Category
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/addNewCategory">Add New Category</a></li>
+                                    <li><a class="dropdown-item" href="/passwordCategory">View All Category</a></li>
+                                    <li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Password Details
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/addNewPassword">Add New Password</a></li>
+                                    <li><a class="dropdown-item" href="/viewAllPassword">View All Password</a></li>
+                                    <li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li class="nav-item dropdown navbar-nav ">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User Login : <%= loginUserId %>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/addNewPassword">Settings</a></li>
+                                <li><a class="dropdown-item" href="/logout">Log out</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>

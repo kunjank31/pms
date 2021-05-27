@@ -1,0 +1,22 @@
+<%# header links part %>
+<% include head_links %>
+<%# navbar part %>
+<% include navbar %>
+<div class="container mt-5">
+    <div class="container category m-auto w-50">
+        <h3 class="text-info p-2"><%= title %> </h3>
+        <form class='form_add' action="/passwordCategory/edit/<%= records._id %> " method="POST">
+          <% if (ShowMsg != '') { %>
+            <p class="text-info"><%= ShowMsg %> </p>
+           <% } %>
+          <div class="mb-3">
+            <label for="categoryName" class="form-label">Category Name</label>
+            <input type="text" class="form-control" value="<%= records.categoryName %> " id="categoryName" name="categoryName" placeholder="Enter Your Password Category Name">
+          </div>
+          <button type="submit" class="btn text-white btn-info">Update Category</button>
+          <p class="fw-bold mt-4"><a href="/passwordCategory" class="text-success text-decoration-none">View All Category Lists</a></p>
+        </form>
+      </div>
+</div>
+<%# Footer part %>
+<% include footer %>

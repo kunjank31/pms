@@ -1,0 +1,23 @@
+<%# header links part %> 
+<% include head_links %>
+
+<div class="container login w-50">
+  <h2 class="text-center"><%= title %> </h2>
+  <form action="/" method="POST">
+    <% if (ShowMsg != '') { %>
+      <p class="text-info"><%= ShowMsg %> </p>
+     <% } %>
+    <div class="mb-3">
+      <label for="username" class="form-label">User Name</label>
+      <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <p class="text-center fw-bold mt-2">if not have account <a href="/register" class="text-success text-decoration-none">Click Now</a></p>
+  </form>
+</div>
+<%# Footer part %> 
+<% include footer %>
